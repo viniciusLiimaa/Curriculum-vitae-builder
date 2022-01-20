@@ -1,0 +1,14 @@
+.section-button {
+  background-color: #6D82CD;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px -3px #000000;
+}
+
+.section-button:hover {
+  transform: scale(0.9);
+  transition-duration: 2s;
+}
