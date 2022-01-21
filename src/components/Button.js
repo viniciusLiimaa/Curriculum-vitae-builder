@@ -6,6 +6,26 @@ class Button extends Component {
     super(props);
   };
 
+
+  clicked = (e) => {
+    const targetEl = e.target;
+
+    if (targetEl.id.includes("update")) {
+      // Executa o código de tooglar cada section para update
+      let inputFilds = targetEl.parentElement.parentElement.parentElement.getElementsByTagName('input');
+
+      for (let i = 0;i < inputFilds.length;i++){
+        console.log(inputFilds[i])
+      }
+      
+      
+    } else {
+      console.log("not a update button")
+      // Da preview no CV todo
+    }
+  }
+
+
   render() {
 
     const { name, id } = this.props;
@@ -13,7 +33,7 @@ class Button extends Component {
     return (
       <div>
         <div id="button-container">
-          <button className='section-button' id={id}>{name}</button>
+          <button onClick={this.clicked} className='section-button' id={id}>{name}</button>
         </div>
       </div>
 
