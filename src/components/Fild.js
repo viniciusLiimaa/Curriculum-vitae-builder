@@ -8,12 +8,14 @@ class Fild extends Component {
 
   render() {
 
-    const { name, id } = this.props;
+    const {name} = this.props;
 
     return (
       <div>
-        <label htmlFor={id}>{name}</label>
-        <input type="text" id={id} name={id}></input>
+        <div id="fild-container">
+          <label htmlFor={name.toLowerCase()}>{name}</label>
+          <input type="text" id={name.toLowerCase()} name={name.toLowerCase()}></input>
+        </div>
       </div>
     )
   };

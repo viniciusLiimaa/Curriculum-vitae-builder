@@ -1,3 +1,15 @@
+#button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#preview-btn {
+  justify-self: center;
+  margin-right: 50%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .section-button {
   background-color: #6D82CD;
   color: white;
@@ -10,5 +22,11 @@
 
 .section-button:hover {
   transform: scale(0.9);
-  transition-duration: 2s;
+  transition-duration: 0.5s;
+}
+
+.section-button:active {
+  background-color: #74EEA5;
+  transition-duration: 0s;
+
 }

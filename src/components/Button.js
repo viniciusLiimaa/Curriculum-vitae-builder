@@ -12,8 +12,9 @@ class Button extends Component {
 
     return (
       <div>
-        <button className='section-button' id={id}>{name}</button>
-
+        <div id="button-container">
+          <button className='section-button' id={id}>{name}</button>
+        </div>
       </div>
 
     );
