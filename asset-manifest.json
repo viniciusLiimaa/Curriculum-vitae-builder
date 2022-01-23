@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Curriculum-vitae-builder/static/css/main.4635b5c7.css",
+    "main.js": "/Curriculum-vitae-builder/static/js/main.05a658ca.js",
+    "index.html": "/Curriculum-vitae-builder/index.html",
+    "main.4635b5c7.css.map": "/Curriculum-vitae-builder/static/css/main.4635b5c7.css.map",
+    "main.05a658ca.js.map": "/Curriculum-vitae-builder/static/js/main.05a658ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4635b5c7.css",
+    "static/js/main.05a658ca.js"
+  ]
+}
