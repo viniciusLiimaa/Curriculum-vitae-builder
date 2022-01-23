@@ -14,3 +14,15 @@ input {
   box-shadow: 1px 1px 8px -6px #000000;
 }
 
+.inactive-fild {
+  pointer-events: none;
+  box-shadow: none;
+  border: 1px solid green;
+  color: grey;
+}
+
+.preview-fild {
+  pointer-events: none;
+  box-shadow: none;
+  color: grey;
+}

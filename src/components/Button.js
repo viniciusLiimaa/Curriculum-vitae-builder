@@ -11,19 +11,41 @@ class Button extends Component {
     const targetEl = e.target;
 
     if (targetEl.id.includes("update")) {
-      // Executa o código de tooglar cada section para update
+      // Toggle each section for update
       let inputFilds = targetEl.parentElement.parentElement.parentElement.getElementsByTagName('input');
 
       for (let i = 0;i < inputFilds.length;i++){
-        console.log(inputFilds[i])
+        inputFilds[i].classList.toggle("inactive-fild");
+        console.log(inputFilds[i]);
       }
       
       
     } else {
-      console.log("not a update button")
-      // Da preview no CV todo
-    }
-  }
+
+      if (targetEl.textContent === "Preview your CV") {
+        targetEl.textContent = "Edit you CV";
+      } else {
+        targetEl.textContent = "Preview your CV";
+      }
+      
+      // Preview the entire CV
+      const allBtns = document.querySelectorAll("button");
+      const allFields = document.querySelectorAll("input");
+
+      allBtns.forEach((btn) => {
+        if (btn.id != "preview-btn") {
+          btn.classList.toggle("inactive-button");
+        };
+      });
+
+      allFields.forEach((field) => {
+        field.classList.toggle("preview-fild");
+        if (field.className.includes("inactive-fild")) {
+          field.classList.remove("inactive-fild");
+        };
+      });
+    };
+  };
 
 
   render() {

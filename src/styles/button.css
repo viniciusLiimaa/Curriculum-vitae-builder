@@ -28,5 +28,11 @@
 .section-button:active {
   background-color: #74EEA5;
   transition-duration: 0s;
+}
 
+.inactive-button {
+  background-color: #E5E5E5;
+  box-shadow: none;
+  color: #E5E5E5;
+  pointer-events: none;
 }
