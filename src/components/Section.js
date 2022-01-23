@@ -5,16 +5,14 @@ import Button from '../components/Button';
 
 class Section extends Component {
   constructor(props) {
-    super(props)
-  }
-
-  
+    super(props);
+  };
 
   buildFilds = (fildNames) => {
     const fildArray = []
 
     for (let i = 0; i < fildNames.length; i++) {
-      fildArray.push(<Fild name={fildNames[i]} key={fildNames[i]}/>)
+      fildArray.push(<Fild name={fildNames[i]} key={fildNames[i]} sendToMain={this.props.updateMain}/>)
     }
     
     return (
